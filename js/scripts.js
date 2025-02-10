@@ -78,7 +78,14 @@
         });
 
     });
-
+    <div class="education-block">
+    <h3>Case Western Reserve University</h3>
+    <span class="education-date">Aug 2024 - Present(Expected May 2028)</span>
+    <h4>Bachelor of Science in Mechancial & Aerospace Engineering</h4>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
+    </p>
+</div>
     // Open mobile menu
     $('#mobile-menu-open').click(function() {
         $('header, body').addClass('active');
