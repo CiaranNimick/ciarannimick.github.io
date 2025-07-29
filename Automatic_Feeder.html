@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/Favicon.jpg"
+      type="image/jpg"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Ciaran Nimick's Portfolio</title>
+  </head>
+
+  <body class = "dyno-page">
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <!--<li class="nav-item"><a href="#logos">My Skills</a></li> -->
+          <li class="nav-item"><a href="https://linkedin.com/in/CiaranNimick" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>CVT Dyno</span>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="work">
+        <div class="container">
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Design</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Our car uses a custom CVT, which requires extensive testing and validation to reach optimal performance. In order to accurately mimic the 
+                  effects of the torque loads the CVT sees, 
+                  we are using a 20hp motor, which is controlled with a VFD and PLC. In order to dissipate the energy of the motor (approximated to be 20kW), 
+                  12 heating elements are being used, and are cooled with a squirrel cage blower. We decided to use aluminum extrusion for the frame 
+                  to make changing/ updating the design more flexible. The structure is supported with steel brackets to improve its rigidity and fatigue life.
+                </p>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/UpdatedDyno.jpg"
+                  alt="Steering Wheel"
+                />
+              </picture>
+            </div>
+            <!--
+            <div class="work-box">
+              <div class="work-textbox">
+                <!- Add your project title here --
+                <h3 class="h3">Design</h3>
+                <!- Add small description of your project  --
+
+                <p class="work-text">
+                  Our car uses a custom CVT, which requires extensive testing and validation to reach optimal performance. In order to accurately mimic the 
+                  effects of the torque loads the CVT sees, 
+                  we are using a 20hp motor, which is controlled with a VFD and PLC. In order to dissipate the energy of the motor (approximated to be 20kW), 
+                  12 heating elements are being used, and are cooled with a squirrel cage blower. We decided to use aluminum extrusion for the frame 
+                  to make changing/ updating the design more flexible. The structure is supported with steel brackets to improve its rigidity and fatigue life.
+                </p>
+              </div>
+
+         <!- Update img src and alt attribute  --
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/UpdatedDyno.jpg"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+          -->
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Manufacturing</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  This is the partially assembled form of the dyno. The steel brackets and fixture plates were waterjet out of quarter inch 
+                  steel, and powder coated to prevent rusting. The aluminun extrusion was cut to length on our vertical bandsaw. The PLC (and more)
+                  is housed in the beige electronics box.
+                </p>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/Partially_Assembled_Dyno.jpg"
+                  alt="contribute dev"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/CiaranNimick" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://linkedin.com/in/CiaranNimick" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
