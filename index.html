@@ -1,252 +1,369 @@
 <!DOCTYPE html>
-
+<!-- Document Type and Language Declaration -->
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="index, follow" name="robots"/>
-<meta content="Ciaran Nimick is a mechanical engineering student focused on hands-on design, analysis, manufacturing, and motorsports." name="description"/>
-<meta content="Ciaran Nimick's Portfolio" itemprop="name"/>
-<meta content="Mechanical engineering portfolio featuring suspension, dynamometer, manufacturing, robotics, research, and personal projects." itemprop="description"/>
-<link href="assets/images/Favicon.jpg" rel="shortcut icon" type="image/jpeg"/>
-<link as="font" crossorigin="" href="assets/fonts/Mona-Sans.woff2" rel="preload" type="font/woff2"/>
-<link href="style.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
-<title>Ciaran Nimick | Mechanical Engineer</title>
+    <!-- Meta tags for character set, responsive design, and SEO indexing -->
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="Ciaran Nimick is a mechanical engineering student focused on hands-on design, analysis, manufacturing, and motorsports." name="description"/>
+    
+    <!-- Schema.org markup for better search engine representation -->
+    <meta content="Ciaran Nimick's Portfolio" itemprop="name"/>
+    <meta content="Mechanical engineering portfolio featuring suspension, dynamometer, manufacturing, robotics, research, and personal projects." itemprop="description"/>
+    
+    <!-- Favicon -->
+    <link href="assets/images/Favicon.jpg" rel="shortcut icon" type="image/jpeg"/>
+    
+    <!-- Preloading custom fonts for performance -->
+    <link as="font" crossorigin="" href="assets/fonts/Mona-Sans.woff2" rel="preload" type="font/woff2"/>
+    
+    <!-- External Stylesheet and JavaScript -->
+    <link href="style.css" rel="stylesheet"/>
+    <!-- The defer attribute ensures the script loads without blocking the HTML parsing -->
+    <script defer="" src="script.js"></script>
+    
+    <!-- Browser Tab Title -->
+    <title>Ciaran Nimick | Mechanical Engineer</title>
 </head>
 <body>
-<header class="site-header">
-<a aria-label="Ciaran Nimick, home" class="brand" href="#top">CN<span>.</span></a>
-<button aria-controls="site-nav" aria-expanded="false" class="menu-button" type="button">Menu</button>
-<nav aria-label="Primary navigation" class="site-nav" id="site-nav">
-<a href="#work">Work</a>
-<a href="#more">More</a>
-<a href="assets/images/Ciaran Nimick Resume.pdf" rel="noopener" target="_blank">Resume</a>
-<a href="https://www.linkedin.com/in/ciaran-nimick/" rel="noopener" target="_blank">LinkedIn</a>
-</nav>
-</header>
-<main id="top">
-<section class="hero">
-<div class="hero-content">
-<p class="eyebrow">Mechanical engineering · CWRU</p>
-<h1>Ciaran Nimick</h1>
-<p class="hero-copy">I’m Ciaran Nimick, a mechanical engineering student combining six years of engineering software experience with hands-on design, analysis, manufacturing, and team leadership.</p>
-<div class="hero-actions">
-<a class="button button-primary" href="#work">Explore my work</a>
-<a class="button button-secondary" href="assets/images/Ciaran Nimick Resume.pdf" rel="noopener" target="_blank">View resume</a>
-</div>
-</div>
-<aside aria-label="Engineering focus areas" class="hero-card">
-<span class="hero-card-label">Focus areas</span>
-<strong>Design</strong>
-<strong>Analysis</strong>
-<strong>Manufacturing</strong>
-<div class="hero-card-line"></div>
-<span>CAD · FEA · Baja SAE</span>
-</aside>
-</section>
-<section aria-labelledby="skills-title" class="skills">
-<div class="section-heading compact">
-<p class="eyebrow">Toolbox</p>
-<h2 id="skills-title">Proficient in</h2>
-</div>
-<div aria-label="Engineering tools" class="logo-strip">
-<img alt="Siemens NX" src="assets/images/trusted-by/NX-Logo.webp"/>
-<img alt="Ansys" src="assets/images/trusted-by/Ansys_logo.png"/>
-<img alt="SolidWorks" src="assets/images/trusted-by/SolidWorks_Logo.png"/>
-<img alt="MATLAB" src="assets/images/trusted-by/MATLAB-logo.png"/>
-<img alt="Onshape" src="assets/images/trusted-by/Onshape_logo.png"/>
-<img alt="Simcenter" src="assets/images/trusted-by/Simcenter-Femap.png"/>
-</div>
-</section>
-<section aria-labelledby="work-title" class="projects" id="work">
-<div class="section-heading">
-<div>
-<p class="eyebrow">Selected work</p>
-<h2 id="work-title">Engineering in context</h2>
-</div>
-<p>Select a project to reveal the design story, analysis, and photos—without leaving this page.</p>
-</div>
-<div class="project-list">
-<details class="project" name="selected-projects">
-<summary>
-<div class="project-number">01</div>
-<div class="project-summary-copy">
-<p class="project-kicker">CWRU Motorsports · Suspension</p>
-<h3>Front lower suspension arm</h3>
-<p>Defining requirements, iterating parametric CAD, and validating a lighter, more serviceable Baja SAE component.</p>
-</div>
-<img alt="Finite element analysis of the suspension arm" src="assets/images/Sus_Arm_FEA.png"/>
-<span class="expand-label"><span class="label-open">Open project</span><span class="label-close">Close project</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content">
-<article class="detail-card">
-<div>
-<p class="detail-label">01 / Requirements</p>
-<h4>Designing from vehicle goals</h4>
-<p>I’m responsible for the research, development, validation, and manufacturing of the front lower suspension arm for CWRU Motorsports. I translated vehicle-level goals into requirements focused on increased ground clearance, a 10–20% weight reduction, improved maintenance, and practical manufacturing.</p>
-</div>
-<img alt="CAD model of the front lower suspension arm" loading="lazy" src="assets/images/suspension-arm.png"/>
-</article>
-<article class="detail-card reverse">
-<div>
-<p class="detail-label">02 / Design cycle</p>
-<h4>Parametric iteration and validation</h4>
-<p>I reviewed previous CWRU Motorsports designs and concepts from other Baja SAE teams, generated and selected concepts, then built parametric Siemens NX models so the design could evolve as suspension geometry was finalized. I’m using FEA to validate strength while continuing to remove unnecessary mass.</p>
-<p class="note">The FEA shown is preliminary.</p>
-</div>
-<img alt="Preliminary suspension arm finite element analysis" loading="lazy" src="assets/images/Sus_Arm_FEA.png"/>
-</article>
-</div>
-</details>
-<details class="project" name="selected-projects">
-<summary>
-<div class="project-number">02</div>
-<div class="project-summary-copy">
-<p class="project-kicker">CWRU Motorsports · Test systems</p>
-<h3>CVT dynamometer</h3>
-<p>Designing a safe thermal enclosure and an FEA-validated gearbox-to-motor adapter for reliable testing.</p>
-</div>
-<img alt="Analysis of the CVT dynamometer adapter" src="assets/images/CVT_Dyno_Ansys.png"/>
-<span class="expand-label"><span class="label-open">Open project</span><span class="label-close">Close project</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content">
-<article class="detail-card">
-<div>
-<p class="detail-label">01 / Design</p>
-<h4>Building a safer test system</h4>
-<p>Our car uses a custom CVT that needs dynamometer testing for performance characterization. As a first-year project, I designed a protective heat shroud to improve the system’s thermal performance and protect users from the heat generated while dissipating up to 20 kW of braking energy.</p>
-</div>
-<img alt="CAD rendering of the CVT dynamometer" loading="lazy" src="assets/images/Updated Dyno.png"/>
-</article>
-<article class="detail-card reverse">
-<div>
-<p class="detail-label">02 / Analysis</p>
-<h4>Connecting the gearbox to the motor</h4>
-<p>I designed a custom trilobe adapter matching the gearbox output and used Ansys FEA to verify it could withstand operating torque loads for secure, reliable integration.</p>
-</div>
-<img alt="Ansys analysis of the trilobe adapter" loading="lazy" src="assets/images/CVT_Dyno_Ansys.png"/>
-</article>
-<article class="detail-card">
-<div>
-<p class="detail-label">03 / Manufacturing</p>
-<h4>From sheet metal to machined adapter</h4>
-<p>We waterjet-cut, bent, and welded the sheet-metal shroud. The adapter was turned to size on a manual lathe, then CNC machined to create the trilobe profile and offset holes.</p>
-</div>
-<img alt="Partially assembled CVT dynamometer" loading="lazy" src="assets/images/Partially_Assembled_Dyno.jpg"/>
-</article>
-</div>
-</details>
-<details class="project" name="selected-projects">
-<summary>
-<div class="project-number">03</div>
-<div class="project-summary-copy">
-<p class="project-kicker">CWRU Motorsports · Suspension</p>
-<h3>Baja SAE front upright</h3>
-<p>Developing and validating a front outboard upright using assembly-level load cases, ANSYS submodeling, and wheel-force inputs.</p>
-</div>
-<div aria-label="Baja SAE front upright engineering project" class="project-visual baja-visual" role="img"><span>BAJA SAE</span><strong>Front upright</strong><small>CAD · FEA · Validation</small></div>
-<span class="expand-label"><span class="label-open">Open project</span><span class="label-close">Close project</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content">
-<article class="detail-card">
-<div>
-<p class="detail-label">01 / Design context</p>
-<h4>Optimizing the front outboard</h4>
-<p>The upright connects the suspension, steering, hub, and wheel into one tightly packaged system. The project responds to changing bearing-bore and geometry requirements while balancing stiffness, mass, serviceability, and manufacturability.</p>
-</div>
-<img alt="CWRU Motorsports Baja SAE vehicle" loading="lazy" src="assets/images/WhiteBackground.jpg"/>
-</article>
-<article class="detail-card reverse">
-<div>
-<p class="detail-label">02 / Structural analysis</p>
-<h4>Loading the part in context</h4>
-<p>I am building the analysis around the complete front outboard assembly—including the rim, hub, and upright—then using ANSYS submodeling to isolate the upright. Direct wheel-force-transducer load cases help represent the forces the component sees on the vehicle.</p>
-<p class="note">This project is currently in development.</p>
-</div>
-<div aria-label="Front upright analysis workflow" class="detail-visual" role="img"><span>LOAD PATH</span><strong>Wheel → hub → upright</strong><small>Assembly model · Submodel · ANSYS</small></div>
-</article>
-</div>
-</details>
-</div>
-</section>
-<section aria-labelledby="more-title" class="projects more-projects" id="more">
-<div class="section-heading">
-<div>
-<p class="eyebrow">Beyond the shortlist</p>
-<h2 id="more-title">More projects &amp; leadership</h2>
-</div>
-<p>Research, robotics, and personal builds that sharpened how I design, document, and lead.</p>
-</div>
-<div class="project-list compact-list"><details class="project" name="more-projects">
-<summary>
-<div class="project-number">04</div>
-<div class="project-summary-copy"><p class="project-kicker">Aerospace &amp; defense · Internship</p><h3>Northrop Grumman internship</h3><p>Professional engineering experience in a structured aerospace and defense environment.</p></div>
-<div aria-label="Northrop Grumman internship" class="project-visual northrop-visual" role="img"><span>NORTHROP GRUMMAN</span><strong>Engineering internship</strong><small>Aerospace · Defense · 2026</small></div>
-<span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content single-detail">
-<article class="detail-card">
-<div>
-<p class="detail-label">Northrop Grumman · 2026</p>
-<h4>Engineering in a professional environment</h4>
-<p>My internship strengthened my experience working within structured engineering processes, collaborating across technical teams, and meeting the documentation and quality expectations of aerospace and defense work. Project-specific details are intentionally limited to respect confidentiality.</p>
-</div>
-<div aria-label="Northrop Grumman engineering internship" class="detail-visual northrop-visual" role="img"><span>ENGINEERING EXPERIENCE</span><strong>From analysis to execution</strong><small>Teamwork · Documentation · Quality</small></div>
-</article>
-</div>
-</details>
-<details class="project" name="more-projects">
-<summary>
-<div class="project-number">05</div>
-<div class="project-summary-copy"><p class="project-kicker">Six years · Competitive robotics</p><h3>VEX Robotics</h3><p>Mechanical design, documentation, fundraising, mentorship, and event leadership.</p></div>
-<img alt="VEX competition robot" src="assets/images/Vex_Robotics/Robot_Pic.jpg"/>
-<span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content">
-<article class="detail-card"><div><p class="detail-label">Design work</p><h4>Twelve complete robot designs</h4><p>I used Onshape to model competitive robots across multiple challenges, collaborated on concepts, and tested and troubleshot mechanisms under competition constraints.</p></div><img alt="VEX robot designed by Ciaran's team" loading="lazy" src="assets/images/Vex_Robotics/Robot_Pic.jpg"/></article>
-<article class="detail-card reverse"><div><p class="detail-label">Leadership</p><h4>Growing a team and its resources</h4><p>As the longest-serving president of Peninsula High School’s VEX teams, I increased yearly funding by 400% through sponsorships, grants, and fundraisers. I helped lead the teams to multiple state championships and organized the school’s inaugural VEX competition, now an annual event.</p></div><img alt="VEX Robotics team leadership" loading="lazy" src="assets/images/Vex_Robotics/Leadership.jpg"/></article>
-<article class="detail-card"><div><p class="detail-label">Documentation</p><h4>Making decisions traceable</h4><p>I helped document CAD, design decisions, competition debriefs, and iteration in engineering notebooks. That reflection supported better designs and contributed to multiple local wins and awards.</p></div><img alt="Example engineering notebook documentation" loading="lazy" src="assets/images/Vex_Robotics/Documentation.png"/></article>
-</div>
-</details>
-<details class="project" name="more-projects">
-<summary>
-<div class="project-number">06</div>
-<div class="project-summary-copy"><p class="project-kicker">Undergraduate research</p><h3>WAKANDA navigation research</h3><p>Supporting magnetoreception-inspired navigation research for extraterrestrial environments.</p></div>
-<img alt="Magnetic field generator in the lab" src="assets/images/Wakanda.PNG"/>
-<span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content single-detail"><article class="detail-card"><div><p class="detail-label">Dr. Taylor’s lab · CWRU</p><h4>Generalizing orbital predictions</h4><p>I supported graduate researchers developing a predictive model for satellite motion in extraterrestrial magnetic fields. The work incorporated generalizable planetary and orbital parameters to improve reliability across diverse mission environments.</p></div><img alt="Laboratory magnetic field generator" loading="lazy" src="assets/images/Wakanda.PNG"/></article></div>
-</details>
-<details class="project" name="more-projects">
-<summary>
-<div class="project-number">07</div>
-<div class="project-summary-copy"><p class="project-kicker">Personal build · Summer 2025</p><h3>FPV drone accessories</h3><p>Custom printed hardware designed around real crash, packaging, and maintenance constraints.</p></div>
-<img alt="Custom FPV drone accessories" src="assets/images/DroneStuff.png"/>
-<span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
-</summary>
-<div class="project-content single-detail"><article class="detail-card"><div><p class="detail-label">SolidWorks · Additive manufacturing</p><h4>Protecting the build where off-the-shelf parts could not</h4><p>I designed a VTX antenna mount, arm and motor protection, a GoPro mount, a balance-lead strap, and a prop guard. Rigid parts were printed in PETG for durability; the prop guard used TPU for flexibility and impact resistance.</p></div><img alt="Collection of custom FPV drone parts" loading="lazy" src="assets/images/DroneStuff.png"/></article></div>
-</details>
+    
+    <!-- SITE HEADER: Contains branding logo and main navigation -->
+    <header class="site-header">
+        <a aria-label="Ciaran Nimick, home" class="brand" href="#top">CN<span>.</span></a>
+        
+        <!-- Mobile menu toggle button -->
+        <button aria-controls="site-nav" aria-expanded="false" class="menu-button" type="button">Menu</button>
+        
+        <!-- Primary Navigation Links -->
+        <nav aria-label="Primary navigation" class="site-nav" id="site-nav">
+            <a href="#work">Work</a>
+            <a href="#more">More</a>
+            <a href="assets/images/Ciaran Nimick Resume.pdf" rel="noopener" target="_blank">Resume</a>
+            <a href="https://www.linkedin.com/in/ciaran-nimick/" rel="noopener" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
 
-</div>
-</section>
-<section aria-labelledby="contact-title" class="contact">
-<p class="eyebrow">Let’s build something useful</p>
-<h2 id="contact-title">Open to hands-on engineering opportunities.</h2>
-<p>I’m always interested in ambitious design work, collaborative teams, and conversations about mechanical engineering.</p>
-<div class="hero-actions">
-<a class="button button-primary" href="https://www.linkedin.com/in/ciaran-nimick/" rel="noopener" target="_blank">Connect on LinkedIn</a>
-<a class="button button-secondary" href="assets/images/Ciaran Nimick Resume.pdf" rel="noopener" target="_blank">View resume</a>
-</div>
-</section>
-</main>
-<footer class="footer">
-<p>© <span id="year"></span> Ciaran Nimick</p>
-<div class="footer-actions">
-<a href="https://github.com/CiaranNimick" rel="noopener" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/ciaran-nimick/" rel="noopener" target="_blank">LinkedIn</a>
-<label class="theme-switch"><span>Light theme</span><input aria-label="Use light theme" id="theme-switch" role="switch" type="checkbox"/></label>
-</div>
-</footer>
+    <!-- MAIN CONTENT AREA -->
+    <main id="top">
+        
+        <!-- HERO SECTION: The landing area introducing you and your high-level skills -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Mechanical engineering · CWRU</p>
+                <h1>Ciaran Nimick</h1>
+                <p class="hero-copy">I’m Ciaran Nimick, a mechanical engineering student combining six years of engineering software experience with hands-on design, analysis, manufacturing, and team leadership.</p>
+                
+                <!-- Primary Call-to-Action buttons -->
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#work">Explore my work</a>
+                    <a class="button button-secondary" href="assets/images/Ciaran Nimick Resume.pdf" rel="noopener" target="_blank">View resume</a>
+                </div>
+            </div>
+            
+            <!-- Quick overview card floating in the hero section -->
+            <aside aria-label="Engineering focus areas" class="hero-card">
+                <span class="hero-card-label">Focus areas</span>
+                <strong>Design</strong>
+                <strong>Analysis</strong>
+                <strong>Manufacturing</strong>
+                <div class="hero-card-line"></div>
+                <span>CAD · FEA · Baja SAE</span>
+            </aside>
+        </section>
+
+        <!-- SKILLS SECTION: Software and tool proficiencies displayed as a logo strip -->
+        <section aria-labelledby="skills-title" class="skills">
+            <div class="section-heading compact">
+                <p class="eyebrow">Toolbox</p>
+                <h2 id="skills-title">Proficient in</h2>
+            </div>
+            <div aria-label="Engineering tools" class="logo-strip">
+                <img alt="Siemens NX" src="assets/images/trusted-by/NX-Logo.webp"/>
+                <img alt="Ansys" src="assets/images/trusted-by/Ansys_logo.png"/>
+                <img alt="SolidWorks" src="assets/images/trusted-by/SolidWorks_Logo.png"/>
+                <img alt="MATLAB" src="assets/images/trusted-by/MATLAB-logo.png"/>
+                <img alt="Onshape" src="assets/images/trusted-by/Onshape_logo.png"/>
+                <img alt="Simcenter" src="assets/images/trusted-by/Simcenter-Femap.png"/>
+            </div>
+        </section>
+
+        <!-- SELECTED WORK SECTION: Primary detailed projects -->
+        <section aria-labelledby="work-title" class="projects" id="work">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="work-title">Engineering in context</h2>
+                </div>
+                <p>Select a project to reveal the more information about the requirements, design story, and analysis.</p>
+            </div>
+            
+            <div class="project-list">
+                <!-- PROJECT 1: Baja SAE Front Upright -->
+                <details class="project" name="selected-projects">
+                    <summary>
+                        <div class="project-number">01</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">CWRU Motorsports · Suspension</p>
+                            <h3>Baja SAE front upright</h3>
+                            <p>Developing and validating a front outboard upright using assembly-level load cases, ANSYS submodeling, and wheel-force inputs.</p>
+                        </div>
+                        <div aria-label="Baja SAE front upright engineering project" class="project-visual baja-visual" role="img"><span>BAJA SAE</span><strong>Front upright</strong><small>CAD · FEA · Validation</small></div>
+                        <span class="expand-label"><span class="label-open">Open project</span><span class="label-close">Close project</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    <div class="project-content">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">01 / Design context</p>
+                                <h4>Optimizing the front outboard</h4>
+                                <p>The upright connects the suspension, steering, hub, and wheel into one tightly packaged system. The project responds to changing bearing-bore and geometry requirements while balancing stiffness, mass, serviceability, and manufacturability.</p>
+                            </div>
+                            <img alt="CWRU Motorsports Baja SAE vehicle" loading="lazy" src="assets/images/WhiteBackground.jpg"/>
+                        </article>
+                        <article class="detail-card reverse">
+                            <div>
+                                <p class="detail-label">02 / Structural analysis</p>
+                                <h4>Loading the part in context</h4>
+                                <p>I am building the analysis around the complete front outboard assembly—including the rim, hub, and upright—then using ANSYS submodeling to isolate the upright. Direct wheel-force-transducer load cases help represent the forces the component sees on the vehicle.</p>
+                                <p class="note">This project is currently in development.</p>
+                            </div>
+                            <div aria-label="Front upright analysis workflow" class="detail-visual" role="img"><span>LOAD PATH</span><strong>Wheel → hub → upright</strong><small>Assembly model · Submodel · ANSYS</small></div>
+                        </article>
+                    </div>
+                </details>
+                
+                <!-- PROJECT 2: Suspension Arm -->
+                <!-- The <details> and <summary> tags are used here to create native, accessible accordion drop-downs for each project -->
+                <details class="project" name="selected-projects">
+                    
+                    <!-- The collapsed view (clickable) -->
+                    <summary>
+                        <div class="project-number">02</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">CWRU Motorsports · Suspension</p>
+                            <h3>Front lower suspension arm</h3>
+                            <p>Defining requirements, iterating parametric CAD, and validating a lighter, more serviceable Baja SAE component.</p>
+                        </div>
+                        <img alt="Finite element analysis of the suspension arm" src="assets/images/Sus_Arm_FEA.png"/>
+                        <span class="expand-label"><span class="label-open">Open project</span><span class="label-close">Close project</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    
+                    <!-- The expanded view (revealed on click) -->
+                    <div class="project-content">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">01 / Requirements</p>
+                                <h4>Designing from vehicle goals</h4>
+                                <p>I’m responsible for the research, development, validation, and manufacturing of the front lower suspension arm for CWRU Motorsports. I translated vehicle-level goals into requirements focused on increased ground clearance, a 10–20% weight reduction, improved maintenance, and practical manufacturing.</p>
+                            </div>
+                            <img alt="CAD model of the front lower suspension arm" loading="lazy" src="assets/images/suspension-arm.png"/>
+                        </article>
+                        
+                        <article class="detail-card reverse">
+                            <div>
+                                <p class="detail-label">02 / Design cycle</p>
+                                <h4>Parametric iteration and validation</h4>
+                                <p>I reviewed previous CWRU Motorsports designs and concepts from other Baja SAE teams, generated and selected concepts, then built parametric Siemens NX models so the design could evolve as suspension geometry was finalized. I’m using FEA to validate strength while continuing to remove unnecessary mass.</p>
+                                <p class="note">The FEA shown is preliminary.</p>
+                            </div>
+                            <img alt="Preliminary suspension arm finite element analysis" loading="lazy" src="assets/images/Sus_Arm_FEA.png"/>
+                        </article>
+                    </div>
+                </details>
+
+                <!-- PROJECT 3: CVT Dynamometer -->
+                <details class="project" name="selected-projects">
+                    <summary>
+                        <div class="project-number">03</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">CWRU Motorsports · Test systems</p>
+                            <h3>CVT dynamometer</h3>
+                            <p>Designing a safe thermal enclosure and an FEA-validated gearbox-to-motor adapter for reliable testing.</p>
+                        </div>
+                        <img alt="Analysis of the CVT dynamometer adapter" src="assets/images/CVT_Dyno_Ansys.png"/>
+                        <span class="expand-label"><span class="label-open">Open project</span><span class="label-close">Close project</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    <div class="project-content">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">01 / Design</p>
+                                <h4>Building a safer test system</h4>
+                                <p>Our car uses a custom CVT that needs dynamometer testing for performance characterization. As a first-year project, I designed a protective heat shroud to improve the system’s thermal performance and protect users from the heat generated while dissipating up to 20 kW of braking energy.</p>
+                            </div>
+                            <img alt="CAD rendering of the CVT dynamometer" loading="lazy" src="assets/images/Updated Dyno.png"/>
+                        </article>
+                        <article class="detail-card reverse">
+                            <div>
+                                <p class="detail-label">02 / Analysis</p>
+                                <h4>Connecting the gearbox to the motor</h4>
+                                <p>I designed a custom trilobe adapter matching the gearbox output and used Ansys FEA to verify it could withstand operating torque loads for secure, reliable integration.</p>
+                            </div>
+                            <img alt="Ansys analysis of the trilobe adapter" loading="lazy" src="assets/images/CVT_Dyno_Ansys.png"/>
+                        </article>
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">03 / Manufacturing</p>
+                                <h4>From sheet metal to machined adapter</h4>
+                                <p>We waterjet-cut, bent, and welded the sheet-metal shroud. The adapter was turned to size on a manual lathe, then CNC machined to create the trilobe profile and offset holes.</p>
+                            </div>
+                            <img alt="Partially assembled CVT dynamometer" loading="lazy" src="assets/images/Partially_Assembled_Dyno.jpg"/>
+                        </article>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- MORE PROJECTS SECTION: Internships, research, and extracurriculars -->
+        <section aria-labelledby="more-title" class="projects more-projects" id="more">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Beyond the shortlist</p>
+                    <h2 id="more-title">More projects &amp; leadership</h2>
+                </div>
+                <p>Research, robotics, and personal builds that sharpened how I design, document, and lead.</p>
+            </div>
+            
+            <div class="project-list compact-list">
+                
+                <!-- PROJECT 4: Internship -->
+                <details class="project" name="more-projects">
+                    <summary>
+                        <div class="project-number">04</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">Aerospace &amp; defense · Internship</p>
+                            <h3>Northrop Grumman internship</h3>
+                            <p>Professional engineering experience in a structured aerospace and defense environment.</p>
+                        </div>
+                        <div aria-label="Northrop Grumman internship" class="project-visual northrop-visual" role="img"><span>NORTHROP GRUMMAN</span><strong>Engineering internship</strong><small>Aerospace · Defense · 2026</small></div>
+                        <span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    <div class="project-content single-detail">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">Northrop Grumman · 2026</p>
+                                <h4>Engineering in a professional environment</h4>
+                                <p>My internship strengthened my experience working within structured engineering processes, collaborating across technical teams, and meeting the documentation and quality expectations of aerospace and defense work. Project-specific details are intentionally limited to respect confidentiality.</p>
+                            </div>
+                            <div aria-label="Northrop Grumman engineering internship" class="detail-visual northrop-visual" role="img"><span>ENGINEERING EXPERIENCE</span><strong>From analysis to execution</strong><small>Teamwork · Documentation · Quality</small></div>
+                        </article>
+                    </div>
+                </details>
+
+                <!-- PROJECT 5: VEX Robotics -->
+                <details class="project" name="more-projects">
+                    <summary>
+                        <div class="project-number">05</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">Six years · Competitive robotics</p>
+                            <h3>VEX Robotics</h3>
+                            <p>Mechanical design, documentation, fundraising, mentorship, and event leadership.</p>
+                        </div>
+                        <img alt="VEX competition robot" src="assets/images/Vex_Robotics/Robot_Pic.jpg"/>
+                        <span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    <div class="project-content">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">Design work</p>
+                                <h4>Twelve complete robot designs</h4>
+                                <p>I used Onshape to model competitive robots across multiple challenges, collaborated on concepts, and tested and troubleshot mechanisms under competition constraints.</p>
+                            </div>
+                            <img alt="VEX robot designed by Ciaran's team" loading="lazy" src="assets/images/Vex_Robotics/Robot_Pic.jpg"/>
+                        </article>
+                        <article class="detail-card reverse">
+                            <div>
+                                <p class="detail-label">Leadership</p>
+                                <h4>Growing a team and its resources</h4>
+                                <p>As the longest-serving president of Peninsula High School’s VEX teams, I increased yearly funding by 400% through sponsorships, grants, and fundraisers. I helped lead the teams to multiple state championships and organized the school’s inaugural VEX competition, now an annual event.</p>
+                            </div>
+                            <img alt="VEX Robotics team leadership" loading="lazy" src="assets/images/Vex_Robotics/Leadership.jpg"/>
+                        </article>
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">Documentation</p>
+                                <h4>Making decisions traceable</h4>
+                                <p>I helped document CAD, design decisions, competition debriefs, and iteration in engineering notebooks. That reflection supported better designs and contributed to multiple local wins and awards.</p>
+                            </div>
+                            <img alt="Example engineering notebook documentation" loading="lazy" src="assets/images/Vex_Robotics/Documentation.png"/>
+                        </article>
+                    </div>
+                </details>
+
+                <!-- PROJECT 6: Research -->
+                <details class="project" name="more-projects">
+                    <summary>
+                        <div class="project-number">06</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">Undergraduate research</p>
+                            <h3>WAKANDA navigation research</h3>
+                            <p>Supporting magnetoreception-inspired navigation research for extraterrestrial environments.</p>
+                        </div>
+                        <img alt="Magnetic field generator in the lab" src="assets/images/Wakanda.PNG"/>
+                        <span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    <div class="project-content single-detail">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">Dr. Taylor’s lab · CWRU</p>
+                                <h4>Generalizing orbital predictions</h4>
+                                <p>I supported graduate researchers developing a predictive model for satellite motion in extraterrestrial magnetic fields. The work incorporated generalizable planetary and orbital parameters to improve reliability across diverse mission environments.</p>
+                            </div>
+                            <img alt="Laboratory magnetic field generator" loading="lazy" src="assets/images/Wakanda.PNG"/>
+                        </article>
+                    </div>
+                </details>
+
+                <!-- PROJECT 7: Drone Build -->
+                <details class="project" name="more-projects">
+                    <summary>
+                        <div class="project-number">07</div>
+                        <div class="project-summary-copy">
+                            <p class="project-kicker">Personal build · Summer 2025</p>
+                            <h3>FPV drone accessories</h3>
+                            <p>Custom printed hardware designed around real crash, packaging, and maintenance constraints.</p>
+                        </div>
+                        <img alt="Custom FPV drone accessories" src="assets/images/DroneStuff.png"/>
+                        <span class="expand-label"><span class="label-open">Open story</span><span class="label-close">Close story</span><i aria-hidden="true"></i></span>
+                    </summary>
+                    <div class="project-content single-detail">
+                        <article class="detail-card">
+                            <div>
+                                <p class="detail-label">SolidWorks · Additive manufacturing</p>
+                                <h4>Protecting the build where off-the-shelf parts could not</h4>
+                                <p>I designed a VTX antenna mount, arm and motor protection, a GoPro mount, a balance-lead strap, and a prop guard. Rigid parts were printed in PETG for durability; the prop guard used TPU for flexibility and impact resistance.</p>
+                            </div>
+                            <img alt="Collection of custom FPV drone parts" loading="lazy" src="assets/images/DroneStuff.png"/>
+                        </article>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION: Call to action for recruiters/connections -->
+        <section aria-labelledby="contact-title" class="contact">
+            <p class="eyebrow">Let’s build something useful</p>
+            <h2 id="contact-title">Open to hands-on engineering opportunities.</h2>
+            <p>I’m always interested in ambitious design work, collaborative teams, and conversations about mechanical engineering.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="https://www.linkedin.com/in/ciaran-nimick/" rel="noopener" target="_blank">Connect on LinkedIn</a>
+                <a class="button button-secondary" href="assets/images/Ciaran Nimick Resume.pdf" rel="noopener" target="_blank">View resume</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- SITE FOOTER: Copyright, Social Links, and Theme Switcher -->
+    <footer class="footer">
+        <p>© <span id="year"></span> Ciaran Nimick</p>
+        <div class="footer-actions">
+            <a href="https://github.com/CiaranNimick" rel="noopener" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ciaran-nimick/" rel="noopener" target="_blank">LinkedIn</a>
+            
+            <!-- Dark/Light Theme Toggle Switch -->
+            <label class="theme-switch">
+                <span>Light theme</span>
+                <input aria-label="Use light theme" id="theme-switch" role="switch" type="checkbox"/>
+            </label>
+        </div>
+    </footer>
 </body>
 </html>
